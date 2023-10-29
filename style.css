@@ -1,0 +1,266 @@
+@charset "utf-8";
+/*視窗底色設定*/
+body
+{
+	background-color: rgba(37, 39, 43, 0.9);
+	/*
+	background-size: cover;
+	background-repeat: no-repeat; /*平舖*/ 
+	font-family: 'Times New Roman', Times, serif, sans-serif;
+  	color: #6c757d; 
+  	
+}
+
+#marquee-container 
+{
+    margin-top: 20px; 
+}
+nav 
+{
+	text-align: center; /* 將標籤列水平置中 */
+    padding: 10px; /* 調整內容與邊框的間距 */
+	margin-bottom: 100px;/*間距*/
+}
+nav a 
+{
+    text-decoration: none; /* 去除連結的下劃線 */
+    margin: 0 10px; /* 調整標籤之間的間距 */
+}
+#wrap
+{
+	width: 798px;
+	margin: 40px auto;
+	padding: 40px 80px;/*上下左右*/
+	border: #aa72bb 1px solid;/*上右下左*/
+	background-color: #fff;
+}
+
+#rule01_rule02
+{
+	border: #dee042 2px solid;/*上右下左*/
+}
+
+/*連結顏色設定*/
+a
+{
+	color:#e39bf5;
+}
+
+a:visited
+{
+	color:rgb(255, 253, 158);
+}
+
+a:hover
+{
+	color:#c90cbf;
+}
+
+/*頁面標題設定*/
+@font-face 
+{
+	font-family: 'CustomFont'; /* 為字體定義一個名字 */
+	src: url('MetalMania-Regular.ttf') format('truetype'); /* 指定字體文件的位置 */
+}
+@font-face 
+{
+	font-family:'CustomFont01';
+	src: url('KaushanScript-Regular.ttf') format('truetype');
+}
+@font-face 
+{
+	font-family:'CustomFont02';
+	src: url('Pangolin-Regular.ttf') format('truetype');
+}
+h1 
+{
+	font-family: 'CustomFont', sans-serif; /* 應用字體 */
+}
+nav
+{
+	font-family: 'CustomFont01', sans-serif;
+}
+h2
+{
+	font-family: 'CustomFont02', sans-serif;
+}
+h1
+{
+	color:#6c36c4;
+	text-align:center;
+	font-size:250%;
+	text-shadow: 0 0 7px rgba(255, 255, 255, 0.904);
+}
+
+h1 span
+{
+	color:#d0e35b;
+}
+
+/*次標題設定*/
+h2
+{
+	color:#ca8dec;
+	border:#dee042 1px dotted;
+	border-left:#fff024 10px solid;
+	border-right:#fff024 10px solid;
+	padding:5px 20px;
+	margin-bottom:0;
+}
+
+.center-text
+{
+    text-align: center;
+}
+
+.center-image 
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.center-gif 
+{
+	display: flex;
+	justify-content: center; /* 水平置中 */
+  	align-items: center; /* 垂直置中 */
+	height: 40vh; 
+}
+  
+
+/*內容標題設定*/
+p
+{
+	color:#fafafa
+}
+dt
+{
+	color:#ffffff;
+	font-weight:bold;
+}
+dd
+{
+	color:#ffffff;
+}
+li
+{
+	color:#ffffff;
+}
+
+table
+{
+	color:#ffffff;
+}
+/*引言區塊設定*/
+#lead
+{
+	border-top:#274438 1px dotted;
+	border-bottom:#6fbb9a 1px dotted;
+	padding:15px;
+	text-align:center;
+}
+
+/*照片及特徵區塊設定*/
+.ph
+{
+	float: left;
+	margin-right: 30px;
+}
+
+.data
+{
+	float: left;
+	width: 388px;
+}
+
+/*「更多介紹」連結設定*/
+.more
+{
+	text-align:right;
+	/*
+	background-image:url(img/icon-arw01.png);
+	background-repeat:no-repeat;
+	background-position:right center;
+	*/
+	background:url(img/icon-arw01.png) no-repeat right center;
+	padding-right:15px;
+	clear: left;
+}
+
+/*花色、性別（共通資料）*/
+.cat-type
+{
+	font-size:80%;
+	font-weight:normal;
+}
+
+/*依性別區分顏色*/
+.cat-type.male
+{
+	color:#2793a7;
+}
+
+.cat-type.female
+{
+	color:#df972f;
+}
+
+/*區塊邊界設定*/
+.frame
+{
+	margin:20px 0;
+	padding:35px 30px 30px 30px;
+	/*
+	background-image:url(img/bg-stripe02.png) ;
+	background-repeat:repeat-x;
+	background-color:#fbf9cc;
+	*/
+	background:url(img/bg-stripe02.png) repeat-x #fbf9cc;
+}
+
+#marquee-container 
+{
+    width: 100%;
+    height: 50px;
+    overflow: hidden;
+    border: 2px solid #FFFFAA;
+    border-radius: 10px;
+}
+
+#marquee-text 
+{
+    font-family: "Indie Flower", sans-serif;
+    font-size: 16px;
+    color: #D3A4FF;
+    white-space: nowrap;
+    animation: marquee 10s linear infinite;
+}
+
+@keyframes marquee 
+{
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+table /*表格設定*/
+{
+    width: 50%;
+    border-collapse: collapse;
+	margin: auto; 
+    display: block;
+}
+th, td 
+{
+    
+	border: none;
+    padding: 8px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);  /* 文字陰影 */
+}
+th 
+{
+    background-color: transparent;
+}
+
+.button-container 
+{
+	text-align: center;  /* 將按鈕置中 */
+}

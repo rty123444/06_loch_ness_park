@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href ="style.css" rel="stylesheet" media="all">
+<meta charset="UTF-8">
+<title>Loch Ness Park</title>
+</head>
+<body>
+    <h1><span class="material-symbols-outlined">book_online</span> Book Your Tickets Going to Loch Ness Park!</h1>
+    <p class="center-text">歡迎菈臨 LOCH NESS PARK! 選擇您想要的時段，我們在到時在遊區與您相會~
+        <br>點擊按鈕，提交表單。<span class="material-symbols-outlined">touch_app</span></p>
+    <form id = "Ticket" action = "#" method ="post">
+    <table border = "0">
+        <tr>
+            <th>姓名:</th>
+            <td><input type ="text" name="name"></td>
+        </tr>
+        <tr>
+            <th>Email:</th>
+            <td><input type ="email" name="email"></td>
+        </tr>
+        <tr>
+            <th>電話:</th>
+            <td><input type ="tel" name="tel" parttern="[0-9]{4}-[0-9]{3}-[0-9]{3}"></td>
+        </tr>
+        <tr>
+            <th>票種:</th>
+            <td>
+                全票 NT.330   優待票 NT.270   免票 NT.0
+            </td>
+        </tr>
+        <tr>
+            <th>*購票須知</th>
+            <td>
+                由於確保遊客的資訊安全，
+                <br>本遊區只開放現場付款，可使用信用卡、悠遊卡及現金付款。
+            </td>
+        </tr>
+        <tr>
+            <th>全票:</th>
+            <td><input type="number" min="0" max="10" value="0"></td>
+        </tr>
+        <tr>
+            <th>優待票:</th>
+            <td><input type="number" min="0" max="10" value="0"></td>
+        </tr>
+        <tr>
+            <th>免票:</th>
+            <td><input type="number" min="0" max="10" value="0"></td>
+        </tr>
+        <tr>
+            <th>請選擇預約時段:</th>
+            <td>
+                <select name="timeslot">
+                    <option value="平日上午(10:00-15:00)">平日上午(10:00-15:00)</option>
+                    <option value="平日​晚上(18:00-22:00)">平日​晚上(18:00-22:00)</option>
+                    <option value="​假日上午(10:00-15:00)">​假日上午(10:00-15:00)</option>
+                    <option value="​假日晚上(18:00-22:00)">​假日晚上(18:00-22:00)</option>
+                    <option value="優惠套票平日套票(含上午及下午) 加購 NT.60">優惠套票平日套票(含上午及下午) 加購 NT.60</option>
+                    <option value="優惠套票假日套票(含上午及下午) 加購 NT.90">優惠套票假日套票(含上午及下午) 加購 NT.90</option>
+                </select>
+            </td>
+        </tr>
+        
+        <tr>
+            <th>相片:</th>
+            <td><input type ="file" name ="photo">(請提供2吋半身照)</td>
+        </tr>
+      
+        <tr>
+            <th>建議事項:</th>
+            <td><textarea name ="comment" rows="4" cols="40">(中文字80字以內)</textarea></td>
+        </tr>
+        </tr>
+    </table>
+<div class="button-container">
+    <input type ="reset" value ="清除重填">
+    <input type ="submit" value ="送出">
+</div>
+</form> 
+<p class="center-text"><a href= "Index.html">➤ Home </a></p>
+<p><small>Copyright&copy;UCHI NO NYAN's All Rights Reserved.</small></P>
+</body>
+</html>
