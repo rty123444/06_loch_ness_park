@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href ="style.css" rel="stylesheet" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loch Ness Park</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <div id="carousel"></div>
+<meta name="key6words" content="About Loch Ness Park:
+站長介紹，關於尼斯湖水怪公園，神祕生物的分類，購票區域，聯絡我們。">
+<meta name="description" content="關於尼斯湖水怪公園">
+</head>
+<style>
+    .li_left
+    {
+        text-align: left;
+    }
+    /*休閒設施個別網頁樣式*/
+    .center-text 
+    {
+        text-align: center;
+    }
+
+    .content-container 
+    {
+        display: flex;
+        justify-content:  column; /* Ensures that the items are spaced out and aligned horizontally */
+        align-items: center; /* Aligns items to the top */
+        border: 3px solid #8400ff; /* Large outer border, change the color as needed */
+        padding: 15px; /* Spacing inside the container */
+	    background-color:transparent ; 
+    }
+
+    .design-concept, .interactive-experience 
+    {
+        width: 48%; /* Adjust the width of these sections as needed */
+        /* No inner yellow border as requested */
+        padding: 10px; /* Spacing inside each section */
+        border: 2px solid none; /* Adds border around each section, change the color as needed */
+        background-color:transparent ; /* Background color for readability, change as needed */
+        box-shadow: none; /* Adds shadow for depth */
+    }
+
+    .round-image 
+    {
+        width: 100%; /* 設定寬度與父容器相符 */
+        display: flex;
+        justify-content: center; /* 圖片置中 */
+        margin-bottom: 30px; /* 圖片下方間距 */
+	    margin-top: 50px; /* 增加與上方標題的間距 */
+        margin-bottom: 30px; /* 增加與下方內容的間距 */
+    }
+
+    .round-image img 
+    {
+        display: block;
+        margin: 0 auto ; /* Centers the image */
+	    max-width: 300px; /* 或設定一個最大寬度 */
+        border-radius: 50%; /* 圓形 */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 陰影效果 */
+    }
+
+    .image-caption 
+    {
+        text-align: center;
+        margin-top: -20px;
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for the caption */
+    }  
+
+    .content-container 
+    {
+        display: flex;
+        justify-content: space-around; /* Adds space between the two content areas */
+        margin-top: 20px;
+    }
+
+    .design-concept, .interactive-experience 
+    {
+        width: 100%; /* 佔滿父容器的寬度 */
+        padding: 10px;
+        text-align: center; /* 文字置中 */
+        box-shadow: none; /* 根據需求取消陰影 */
+    }
+
+    /* 如有需要，添加響應式設計的媒體查詢 */
+    @media (max-width: 768px) 
+    {
+        .sections-container 
+	    {
+            flex-direction: column; /* 在小屏幕上改為垂直排列 */
+        }
+
+        .section 
+	    {
+            width: 100%; /* 小屏幕上佔滿全寬 */
+            margin-bottom: 20px; /* 為了避免內容疊在一起，添加下邊距 */
+        }
+
+        .round-image img 
+	    {
+            width: 75%; /* 小屏幕上的圖片寬度 */
+        }
+    }
+    /* 新增的設計概念和互動體驗的h2樣式 */
+.section-title {
+    color: inherit; /* 繼承父元素顏色 */
+    border: none; /* 移除框線 */
+    padding: 0; /* 如果需要的話，可以調整內距 */
+    margin: 0; /* 如果需要的話，可以調整外距 */
+    font-family: inherit; /* 繼承父元素字型 */
+    /* 其他必要的樣式 */
+}
+
+
+/* 內容容器的樣式 */
+.sections-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+/* 個別段落的樣式 */
+.section {
+    width: 48%;
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+}
+
+/* 特定於設計概念的框線樣式 */
+.design-concept {
+    border: 3px solid #8400ff; /* 紫色框線 */
+    color: white;
+}
+
+/* 特定於互動體驗的框線樣式 */
+.interactive-experience {
+    border: 3px solid #ffd700; /* 黃色框線 */
+    color: white;
+}
+</style>
+<body>
+    <h1>Loch Ness Park <span class="material-icons">dark_mode</span></h1>
+    <div id="marquee-container">
+        <p id="marquee-text">歡迎菈臨! Loch Ness Park! 在行程開始前，請瀏覽官方網頁，獲取更多的資訊，讓您啟程一個美好的旅行~</p>
+    </div>
+
+    <nav>
+        <a href="ME.html">About Me</a>
+        <a href="Introduce.html">Introduce </a>
+        <a href="Type.html">Type</a>
+        <a href = "Area.html">Booking Area</a>
+        <a href = "Contact.html">Contact</a>
+    </nav>     
+
+    <section id="Old Castle">
+        <h2 class="center-text">Old Castle 🏰</h2>
+        
+        <div class="round-image">
+            <img src="Image/castle2.png" alt="Old Castle">
+        </div>
+    
+        <h3 class="center-text"><font color="#B088FF">古老的城堡- “隱藏之地”</font></h3>
+        <div class="sections-container">
+            <div class="design-concept section">
+                <h2 class="section-title">設計概念</h2>
+                <p>“隱藏之地”是一座蘊含著深厚歷史和神秘色彩的古老城堡。這座城堡的每一塊石頭和每一道牆壁都散發著古老家族的神秘氣息，據傳這里曾是獨角獸和小矮人的聚居地。城堡的設計充滿迷宮般的走廊和隱蔽的房間，暗示著過去進行的秘密實驗和儀式。</p>
+            </div>
+    
+            <div class="interactive-experience section">
+                <h2 class="section-title">互動體驗</h2>
+                <ul>
+                    <li class="li_left">探秘之旅：遊客將被邀請參加一次充滿挑戰的探秘之旅，尋找隱藏在城堡各處的線索和秘密。</li>
+                    <li class="li_left">增強現實尋寶：利用增強現實技術，遊客可以尋找到虛擬的獨角獸和小矮人，並解開與它們相關的謎題。</li>
+                    <li class="li_left">互動展區：設置有多個互動展區，展示城堡的歷史、家族的神秘傳說和古代文物。</li>
+                    <li class="li_left">夜間探險：在夜間提供特殊的探險活動，讓遊客在昏暗的燈光下探索城堡，增加神秘感和刺激感。</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+<p class="center-text"><a href= "Index.html">➤ Home </a></p>
+<p><small>Copyright&copy;UCHI NO NYAN's All Rights Reserved.</small></P>
+    <script>
+        function changeButtonColor(button) 
+        {
+            button.classList.add('button-clicked');
+        }
+    </script>
+</body>
+</html>
