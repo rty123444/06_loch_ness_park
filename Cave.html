@@ -105,42 +105,50 @@
         }
     }
     /* 新增的設計概念和互動體驗的h2樣式 */
-.section-title {
-    color: inherit; /* 繼承父元素顏色 */
-    border: none; /* 移除框線 */
-    padding: 0; /* 如果需要的話，可以調整內距 */
-    margin: 0; /* 如果需要的話，可以調整外距 */
-    font-family: inherit; /* 繼承父元素字型 */
-    /* 其他必要的樣式 */
-}
+    .section-title 
+    {
+        color: inherit; /* 繼承父元素顏色 */
+        border: none; /* 移除框線 */
+        padding: 0; /* 如果需要的話，可以調整內距 */
+        margin: 0; /* 如果需要的話，可以調整外距 */
+        font-family: inherit; /* 繼承父元素字型 */
+        /* 其他必要的樣式 */
+    }
 
+    /* 內容容器的樣式 */
+    .sections-container 
+    {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 30px;
+    }
 
-/* 內容容器的樣式 */
-.sections-container {
-    display: flex;
-    justify-content: space-around;
-    margin-top: 30px;
-}
+    /* 個別段落的樣式 */
+    .section 
+    {
+        width: 48%;
+        padding: 10px;
+        text-align: center;
+        background-color: transparent;
+    }
 
-/* 個別段落的樣式 */
-.section {
-    width: 48%;
-    padding: 10px;
-    text-align: center;
-    background-color: transparent;
-}
+    /* 特定於設計概念的框線樣式 */
+    .design-concept 
+    {
+        border: 3px solid #8400ff; /* 紫色框線 */
+        color: white;
+    }
 
-/* 特定於設計概念的框線樣式 */
-.design-concept {
-    border: 3px solid #8400ff; /* 紫色框線 */
-    color: white;
-}
-
-/* 特定於互動體驗的框線樣式 */
-.interactive-experience {
-    border: 3px solid #ffd700; /* 黃色框線 */
-    color: white;
-}
+    /* 特定於互動體驗的框線樣式 */
+    .interactive-experience 
+    {
+        border: 3px solid #ffd700; /* 黃色框線 */
+        color: white;
+    }
+    .go_intorduce
+    {
+        text-decoration: none;
+    }
 </style>
 <body>
     <h1>Loch Ness Park <span class="material-icons">dark_mode</span></h1>
@@ -156,33 +164,33 @@
         <a href = "Contact.html">Contact</a>
     </nav>     
 
-    <section id="Old Castle">
-        <h2 class="center-text">Old Castle 🏰</h2>
-        
+    <section id="Mysterious Cave System">
+        <h2 class="center-text">Mysterious Cave System 🗺️</h2>
+        <p><a href= "Introduce.html" class="go_intorduce">➢ Go Leisure Facilities </a></p>
         <div class="round-image">
-            <img src="Image/castle2.png" alt="Old Castle">
+            <img src="Image/cave2.png" alt="Mysterious Cave System">
         </div>
     
-        <h3 class="center-text"><font color="#B088FF">古老的城堡- “隱藏之地”</font></h3>
+        <h3 class="center-text"><font color="#9999FF">神祕洞穴系統- “幽暗迷宮”</font></h3>
         <div class="sections-container">
             <div class="design-concept section">
                 <h2 class="section-title">設計概念</h2>
-                <p>“隱藏之地”是一座蘊含著深厚歷史和神秘色彩的古老城堡。這座城堡的每一塊石頭和每一道牆壁都散發著古老家族的神秘氣息，據傳這里曾是獨角獸和小矮人的聚居地。城堡的設計充滿迷宮般的走廊和隱蔽的房間，暗示著過去進行的秘密實驗和儀式。</p>
+                <p>“幽暗迷宮”是一個錯綜複雜的神秘洞穴系統，據說是大腳怪和妖精的棲息地。這個洞穴融合了自然的奇觀和人工的藝術，創造出一個既神秘又引人入勝的探險環境。洞穴內部佈滿了奇異的地質結構、閃爍的礦石和神秘的符號。</p>
             </div>
     
             <div class="interactive-experience section">
                 <h2 class="section-title">互動體驗</h2>
                 <ul>
-                    <li class="li_left">探秘之旅：遊客將被邀請參加一次充滿挑戰的探秘之旅，尋找隱藏在城堡各處的線索和秘密。</li>
-                    <li class="li_left">增強現實尋寶：利用增強現實技術，遊客可以尋找到虛擬的獨角獸和小矮人，並解開與它們相關的謎題。</li>
-                    <li class="li_left">互動展區：設置有多個互動展區，展示城堡的歷史、家族的神秘傳說和古代文物。</li>
-                    <li class="li_left">夜間探險：在夜間提供特殊的探險活動，讓遊客在昏暗的燈光下探索城堡，增加神秘感和刺激感。</li>
+                    <li class="li_left">迷宮探險：遊客可以在專業指導下深入洞穴，探索其迷宮般的路徑和隱藏的房間。</li>
+                    <li class="li_left">虛擬實境尋找生物：利用虛擬實境技術，遊客可以在洞穴中尋找大腳怪和妖精的蹤影，並揭開它們的秘密。</li>
+                    <li class="li_left">互動學習站：在洞穴的特定位置設置互動學習站，讓遊客了解洞穴的地質結構和生態系統。</li>
+                    <li class="li_left">秘密房間的尋找：設計一系列的挑戰和謎題，引導遊客尋找洞穴深處的秘密房間和古老文物。</li>
                 </ul>
             </div>
         </div>
     </section>
     
-<p class="center-text"><a href= "Index.html">➤ Home </a></p>
+<p class="center-text"><a href= "Index.html" class="go_home">➤ Home </a></p>
 <p><small>Copyright&copy;UCHI NO NYAN's All Rights Reserved.</small></P>
     <script>
         function changeButtonColor(button) 

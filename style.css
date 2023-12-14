@@ -93,6 +93,11 @@ h1 span
 {
 	color:#d0e35b;
 }
+/*.go_home 超連結不要下底線*/
+.go_home
+{
+    text-decoration:none;
+}
 
 /*次標題設定*/
 h2
@@ -397,7 +402,7 @@ th
 }
 
 /* 按鈕點擊效果 */
-.button:active 
+.button:active,.Facilities-button:active,.Me-button:active 
 {
 	transform: translateY(2px); /* 按下去時輕微下移 */
 }
@@ -414,18 +419,37 @@ th
     text-align: center;
     margin: 20px 0; /* 調整按鈕上下的間距 */
 }
-
-.legend-button, .news-button 
+/*.Facilities-button*/
+.Facilities-button 
 {
     padding: 10px 20px;
     margin: 10px; /* 按鈕之間的間距 */
     border: none;
     border-radius: 5px; /* 輕微的圓角邊框 */
-    background-color: #00008B; /* 深藍色背景 */
+    background-color:#1d54a5; /* 深藍色背景 */
     color: #FFD700; /* 黃色文字 */
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s; /* 平滑過渡效果 */
+    margin: 0 10px; /* 確保按鈕之間有空間 */
+}
+.Facilities-button:hover 
+{
+    background-color: #13a4d8e5; /* 變為淺藍色，但不要太淺 */
+}
+
+.Me-button
+{
+    padding: 10px 20px;
+    margin: 10px; /* 按鈕之間的間距 */
+    border: none;
+    border-radius: 5px; /* 輕微的圓角邊框 */
+    background-color:#1d54a5; /* 深藍色背景 */
+    color: #FFD700; /* 黃色文字 */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* 平滑過渡效果 */
+    margin: 0 10px; /* 確保按鈕之間有空間 */
 }
 
 /* 滑鼠滑過按鈕時的效果 */
@@ -437,42 +461,12 @@ th
     padding: 20px 0; /* 上下間距 */
 }
 
-.legend-button
-{
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px; /* 輕微的圓角邊框 */
-    background-color: #1d54a5; /* 深藍色背景 */
-    color: #eed755; /* 黃色文字 */
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* 平滑過渡效果 */
-    margin: 0 10px; /* 確保按鈕之間有空間 */
-}
 
-.news-button
-{
-	padding: 10px 20px;
-    border: none;
-    border-radius: 5px; /* 輕微的圓角邊框 */
-    background-color: #13a4d8e5; /* 深藍色背景 */
-    color: #eed755; /* 黃色文字 */
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* 平滑過渡效果 */
-    margin: 0 10px; /* 確保按鈕之間有空間 */
-} 
 /* 滑鼠懸停效果 */
-.legend-button:hover 
+.Me-button:hover 
 {
     background-color: #13a4d8e5; /* 變為淺藍色，但不要太淺 */
 }
-
-.news-button:hover 
-{
-    background-color: #1d54a5; /* 變為更淺的藍色 */
-}
-
 
 /* 這裡將特定於Old Castle的h2樣式從全局h2樣式中分離出來 */
 #Old-Castle h2.center-text 

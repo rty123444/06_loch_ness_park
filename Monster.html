@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href ="style.css" rel="stylesheet" media="all">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loch Ness Park</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Indie+Flower">
+    <div id="carousel"></div>
+<meta name="key6words" content="About Loch Ness Park:
+站長介紹，關於尼斯湖水怪公園，神祕生物的分類，購票區域，聯絡我們。">
+<meta name="description" content="關於尼斯湖水怪公園">
+</head>
+<style>
+  
+
+    /* 圓形懸停按鈕的容器樣式 */
+    .button-container 
+    {
+        position: relative;
+        width: 150px; /* 按鈕尺寸 */
+        height: 150px;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    /* 常態圖片的樣式 */
+    .image-normal   
+    {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transition: opacity 0.3s ease;
+    }
+
+    /* 懸停圖片的樣式 */
+    .image-hover 
+    {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    /* 按鈕文字的樣式 */
+    .button-text   
+    {
+        font-family: 'CustomFont01', sans-serif;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 10px; /* 文字的位置 */
+        font-size: 16px;
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: transform 0.3s ease;
+    }
+
+    /* 按鈕懸停效果 */
+    .hover-button:hover .image-normal 
+    {
+        opacity: 0;
+    }
+
+    .hover-button:hover .image-hover 
+    {
+        opacity: 1;
+    }
+
+    .hover-button:hover .button-text 
+    {
+        color: 	#ffffff;
+        transform: translateY(-10px); /* 文字向上浮動的距離 */
+    }
+    
+    /* 圓形懸停按鈕的容器樣式 */
+    .button-container2 
+    {
+        position: relative;
+        width: 150px; /* 按鈕尺寸 */
+        height: 150px;
+        margin: auto;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    /* 常態圖片的樣式 */
+    .image-normal2   
+    {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        transition: opacity 0.3s ease;
+    }
+
+    /* 懸停圖片的樣式 */
+    .image-hover2 
+    {
+        width: 100%;
+        height: auto;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    /* 按鈕文字的樣式 */
+    .button-text2   
+    {
+        font-family: 'CustomFont01', sans-serif;
+        text-align: center;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        bottom: 10px; /* 文字的位置 */
+        font-size: 16px;
+        color: #3A0088;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: transform 0.3s ease;
+    }
+
+    /* 按鈕懸停效果 */
+    .hover-button2:hover .image-normal2 
+    {
+        opacity: 0;
+    }
+
+    .hover-button2:hover .image-hover2 
+    {
+        opacity: 1;
+    }
+
+    .hover-button2:hover .button-text2 
+    {
+        color:#FFFF00;
+        transform: translateY(-10px); /* 文字向上浮動的距離 */
+        
+    }
+    .buttons-wrapper 
+    {
+        display: flex;
+        justify-content: center; /* 如果需要兩側有空間可以改為 space-between */
+        align-items: center; /* 垂直居中對齊 */
+    }
+
+    /* 確保 .button-container 和 .button-container2 內部的元素不超過容器大小 */
+    .button-container, .button-container2 
+    {
+        flex: 0 0 150px; /* 不允許按鈕容器伸縮，保持150px */
+        margin: 0 100px; /* 按鈕之間的間隔，根據需要調整 */
+    }
+</style>
+<body>
+    <h1>Loch Ness Park <span class="material-icons">dark_mode</span></h1>
+    <div id="marquee-container">
+        <p id="marquee-text">歡迎菈臨! Loch Ness Park! 在行程開始前，請瀏覽官方網頁，獲取更多的資訊，讓您啟程一個美好的旅行~</p>
+    </div>
+
+    <nav>
+        <a href="ME.html">About Me</a>
+        <a href="Introduce.html">Introduce </a>
+        <a href="Type.html">Type</a>
+        <a href = "Area.html">Booking Area</a>
+        <a href = "Contact.html">Contact</a>
+    </nav>     
+
+    <section id="Loch Ness Monster">
+        <h2 class="center-text">Loch Ness Monster 🦕</h2>
+        <div class="center-gif">
+            <img src="gif/monster.gif" alt="Loch Ness Monster" width="480" height="270">
+        </div>
+        <div class="description center-text">
+            <h3><font color="#77DDFF">深邃的尼斯湖，一直以來都是神秘與謎團的代名詞。在這裡，傳說與歷史交織成一張網，捕捉著每一位探險者的好奇心。
+                <br>我們今天要講述的，不僅僅是一則故事，而是一個世紀以來，持續捉摸不透的謎—尼斯湖水怪，或者您更熟悉的名字，尼斯湖的「nessie」。</font color></h3>
+            <p>
+                <br><br>自1933年一張模糊的照片震驚世界以來，尼斯湖水怪的傳說便深植人心。有人說，它是史前生物的最後倖存者，有人則猜測它只是一條大魚或者被誤認的水中樹幹。
+                <br>但無論真相如何，它那突出水面的輪廓已經成為這片水域的永恆圖騰。
+                <br>每年，來自世界各地的遊客蜂擁至尼斯湖，希望能一睹「nessie」的風采。湖面上，偶爾會有波浪起伏，彷彿是某種巨大生物的背鰭在遊弋。
+                <br>而每當湖面回歸寧靜，人們又會開始質疑，那一切是否只是幻影。
+                <br><br>不過，尼斯湖不僅僅有水怪傳說。它的深度足以埋藏著一座古堡，湖底下還有未知的遺跡等待著勇敢的探險者去發現。
+                <br>無論您是來自遠方的旅人，還是尋求刺激的冒險家，尼斯湖都準備好迎接您的到來，用它的秘密，挑戰您的想像。
+                <br>所以，拉緊您的風衣，準備好您的望遠鏡，一場關於尼斯湖水怪的尋秘之旅即將開始。
+                <br>在這個旅程中，不僅是尋找「nessie」，更是尋找那份驚奇與未知的樂趣。歡迎來到尼斯湖，一段離奇而有趣的探險現在就要開啟了。</p>
+        </div>
+        <div class="buttons-wrapper">
+            <div class="button-container">
+                <a href="Story.html" class="hover-button">
+                
+                    <img src="photo/Monster3.jpg" alt="Story Image" class="image-normal">
+                    <img src="photo/Monster4.jpg" alt="Story Hover Image" class="image-hover">
+                    <span class="button-text">MY STORY</span>
+                </a>
+            </div>
+            <div class="button-container2">
+                <a href="News.html" class="hover-button2">
+                
+                    <img src="photo/monster6.jpg" alt="Story Image" class="image-normal2">
+                    <img src="photo/monster5.jpg" alt="Story Hover Image" class="image-hover2">
+                    <span class="button-text2">MY News</span>
+                </a>
+            </div>
+        </div>
+    </section>
+<p class="center-text"><a href= "Index.html" class="go_home">➤ Home </a></p>
+<p><small>Copyright&copy;UCHI NO NYAN's All Rights Reserved.</small></P>
+</body>
+</html>
