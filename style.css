@@ -498,3 +498,128 @@ p, li {
     color: #fafafa;
 }
 
+.gallery-container 
+{
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 80%;
+    height: 350px;
+    margin: 40px auto;
+    position: relative;
+}
+
+#gallery-image {
+    width: 70%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: 20px; /* 調整右側邊距 */
+}
+
+.description-and-indicators {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.description-container {
+    padding: 0 20px;
+    margin-bottom: 20px;
+}
+
+.indicator-container {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.indicator {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.indicator.active {
+    background-color: #fff;
+    width: 15px;
+    height: 15px;
+    box-shadow: 0 0 0 2px #000;
+    transform: scale(1.25);
+}
+
+.gallery-button {
+    background-color: #444;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+.gallery-button.previous {
+    left: -50px; /* 左側按鈕位置 */
+}
+
+.gallery-button.nex {
+    right: -50px; /* 右側按鈕位置 */
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    #gallery-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .description-and-indicators {
+        width: 100%;
+        padding: 0;
+    }
+
+    .gallery-button {
+        position: static;
+        margin: 10px 0;
+        transform: none;
+    }
+
+    .indicator-container {
+        position: static;
+        margin-top: 20px;
+        transform: none;
+    }
+}
+
+
+
+
+
