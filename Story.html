@@ -197,6 +197,15 @@
         border-radius: 5px;
         margin-top: 10px;
     }
+    ol,li
+    {
+        /*設置靠左對齊*/
+        text-align: left;
+    }
+    .go_monster
+    {
+        text-decoration: none;
+    }
 
 </style>
 <body>
@@ -207,33 +216,15 @@
 
     <nav>
         <a href="ME.html">About Me</a>
-        <a href="Introduce .html">Introduce </a>
+        <a href="Introduce.html">Introduce </a>
         <a href="Type.html">Type</a>
         <a href = "Area.html">Booking Area</a>
         <a href = "Contact.html">Contact</a>
     </nav>     
 
 <section id = "Story">
-    <h2 class="center-text">Story</h2>
-    <!--
-    <div class="storybook-container">
-        <div class="page-container">
-            <div class="page">
-            <h2 class="section-title">Basic Information</h2>
-            <img src="photo/monster7.jpg" alt="Nessie">
-            <p>尊敬的訪客，歡迎您來到尼斯湖。我是這裡的傳說守護者——尼斯湖水怪，當地人親切地稱呼我為「Nessie」。
-            <br>在這片古老的水域中，我已經潛藏了數個世紀，見證了無數的歷史變遷。
-            <br>如果您願意，我將引領您穿梭在湖畔的迷霧中，探索我們湖泊的自然奧秘以及那些流傳於世的故事。
-            <br><br>請跟隨我的步伐，開啟一段難忘的探索之旅。</p>
-            </div>
-        </div>
-        <button class="turn-page-button left">＜ Back</button>
-        <button class="turn-page-button right">Next ＞</button>
-            </div>
-        </div>
-        
-    </div>
-    -->
+    <h2 class="center-text">Story 📖</h2>
+    <p><a href= "Monster.html" class="go_monster">➢ Go Loch Ness Monster </a></p>
     <div class="gallery-container">
         <div class="button-and-image-container">
             <button class="gallery-button previous" onclick="previousImage()">&#10094;</button>
@@ -262,30 +253,37 @@
 var currentImageIndex = 0;
 const images = [
     { src: "photo/monster7.jpg", description: "尊敬的訪客，歡迎您來到尼斯湖。我是這裡的傳說守護者——尼斯湖水怪，當地人親切地稱呼我為「Nessie」。<br>在這片古老的水域中，我已經潛藏了數個世紀，見證了無數的歷史變遷。<br>如果您願意，我將引領您穿梭在湖畔的迷霧中，探索我們湖泊的自然奧秘以及那些流傳於世的故事。<br><br>請跟隨我的步伐，開啟一段難忘的探索之旅。" },
-    { src: "photo/monster8.jpg", description: "<ol><li>據說尼斯湖水怪（也稱為 Nessie）生活在蘇格蘭的尼斯湖中。這是該國第二大湖泊。<li>尼斯湖水怪也因其暱稱“尼斯湖水怪”而為人所知。<li>尼斯湖是位於蘇格蘭高地的一個淡水湖，靠近因弗內斯。<li>1933 年 12 月 6 日，休·格雷 (Hugh Gray) 拍攝了第一張尼斯湖水怪的照片。<li>有些人認為尼斯湖水怪不是獨居生物。事實上，有人提出，如果這種生物存在，那麼湖中一定有很多。" },
+    { src: "photo/monster8.jpg", description: "<ol><li>據說尼斯湖水怪（也稱為 Nessie）生活在蘇格蘭的尼斯湖中。這是該國第二大湖泊。</li><li>尼斯湖水怪也因其暱稱“尼斯湖水怪”而為人所知。</li><li>尼斯湖是位於蘇格蘭高地的一個淡水湖，靠近因弗內斯。</li><li>1933 年 12 月 6 日，休·格雷 (Hugh Gray) 拍攝了第一張尼斯湖水怪的照片。</li><li>有些人認為尼斯湖水怪不是獨居生物。事實上，有人提出，如果這種生物存在，那麼湖中一定有很多。</li></ol>" },
     { src: "photo/monster9.jpg", description: "為了揭開尼斯湖水怪的謎團，多次科學調查和探險活動已在尼斯湖進行。<br>尼斯湖水怪的傳說已成為尼斯湖地區重要的文化符號之一。它吸引著數以萬計的遊客前來尼斯湖，希望能親眼目睹這個傳說中的生物。<br>無論尼斯湖水怪的真實性如何，它已成為尼斯湖地區豐富文化遺產的一部分，並為人們帶來了無盡的探索和想像的空間。<br>尼斯湖水怪的故事將繼續在世代間流傳，為這個美麗的地區增添了一份神秘和魅力。" },
 ];
-function fadeOutIn(element, callback) {
+function fadeOutIn(element, callback) 
+{
     element.style.opacity = 0;
-    setTimeout(function() {
+    setTimeout(function() 
+    {
         callback();
         element.style.opacity = 1;
     }, 500); // 淡出淡入的時間可以根據需要調整
 }
-function updateGallery() {
+function updateGallery() 
+{
     const imageElement = document.getElementById('gallery-image');
     const descriptionElement = document.getElementById('image-description');
     const sectionTitle = document.querySelector('.section-title');
 
-    fadeOutIn(imageElement, function() {
+    fadeOutIn(imageElement, function() 
+    {
         imageElement.src = images[currentImageIndex].src;
         descriptionElement.innerHTML = images[currentImageIndex].description;
         sectionTitle.style.display = currentImageIndex === 0 ? 'block' : 'none';
     });
 
-    document.querySelectorAll('.indicator').forEach((indicator, index) => {
+    document.querySelectorAll('.indicator').forEach((indicator, index) => 
+    {
         indicator.classList.toggle('active', index === currentImageIndex);
     });
+    imageElement.style.width = '350px'; // 這裡可以調整圖片的寬度
+    imageElement.style.height = '300px'; // 這裡可以調整圖片的高度
 }
 
 function setCurrentImage(index) 
