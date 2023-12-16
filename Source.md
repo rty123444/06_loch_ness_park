@@ -21,6 +21,16 @@ https://i.pinimg.com/564x/83/6f/8f/836f8f7ebc16d706cb4e0d0b9f50a37e.jpg
 https://i.pinimg.com/564x/52/75/33/5275335ff3f4268c4d5c6e7e0b19c089.jpg
 https://i.pinimg.com/564x/ec/bf/ac/ecbfacbe53b56e7a66d68ad1e11c2f4e.jpg
 https://kknews.cc/travel/8ybbj9g.html
+https://i.pinimg.com/564x/27/eb/88/27eb885d7599a89de7d577dfbe53c487.jpg
+
+Type
+https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRod-tIlo15rwxcZFQFV81G1dPit1mET_VYWX-QjeFUEbJu8RzA
+https://static.wixstatic.com/media/896883_817716f655f8401f8e1ebe8f09b552ca~mv2.png/v1/fill/w_350,h_355,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/896883_817716f655f8401f8e1ebe8f09b552ca~mv2.png
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR00J27nCkZCJOocQFaK_ab7GPlJtN5320PFe_XMKAr4ynXA-gW
+https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT63KojLY_jtMXdACxLtQ2tk82AXP1siqwSae-22o_8PZ_yX-nB
+https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSECIl-F0OiWI5hcbyw4r3lrVd6zvyuUltVuWw3z-ik6QZy4OLx
+https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUTSmokIInRZmqD6Ru35UGhPmfZ0ECthxICASP6QER4chL-j3k
+https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCJE7te_Z_TWKNxH8kLHLqKlLgbqqyTIwypObZYkIJ3zvtFACi
 
 
 Vistor icon:https://static.thenounproject.com/png/19725-200.png

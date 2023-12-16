@@ -241,6 +241,58 @@ h2
     /* 如果您需要，可以在這裡添加更多樣式 */
 }
 
+.News-item 
+{
+    color: white;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* 添加下邊距 */
+    max-width: 60%;
+}
+
+/* 確保圖片和文字描述在大屏幕上水平排列 */
+@media screen and (min-width: 768px) 
+{
+    .Newsimage-left, .News 
+    {
+        display: inline-block;
+        vertical-align: top; /* 確保頂部對齊 */
+    }
+}
+
+/* 較小屏幕的調整 */
+@media screen and (max-width: 768px) 
+{
+    .Newsimage-left, .News 
+    {
+        display: block;
+        width: 100%;
+    }
+    .Newsimage-left img 
+    {
+        display: block;
+        margin: 0 auto; /* 圖片居中 */
+    }
+}
+
+.Newsimage-left
+{
+    float: left; /* 讓圖片浮動到左邊 */
+    /*圖片陰影*/
+    box-shadow: 0 0px 20px black;
+    margin-right: 20px; /* 圖片右邊的間距 */
+    max-width: 320px; /* 最大寬度限制 */
+    width: 350px; /* 限制最大寬度 */
+    height: 350px; /* 限制最大高度 */
+    border-radius: 4px;
+}
+
+.type-text
+{
+    max-width:auto;
+    text-align: center;
+}
+
 /*內容標題設定*/
 p
 {
@@ -516,7 +568,7 @@ p, li {
 
 #gallery-image 
 {
-    width: 80%;
+    width: 0%;
     object-fit: cover;
     border-radius: 5px;
     transition: opacity 0.5s ease-in-out;
