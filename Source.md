@@ -31,14 +31,23 @@ https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT63KojLY_jtMXdACxLtQ2tk82A
 https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSECIl-F0OiWI5hcbyw4r3lrVd6zvyuUltVuWw3z-ik6QZy4OLx
 https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSUTSmokIInRZmqD6Ru35UGhPmfZ0ECthxICASP6QER4chL-j3k
 https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTCJE7te_Z_TWKNxH8kLHLqKlLgbqqyTIwypObZYkIJ3zvtFACi
-
+https://static.wixstatic.com/media/896883_e9aae5be36ef4789b56230c661dd1cb9~mv2.png/v1/fill/w_350,h_529,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/896883_e9aae5be36ef4789b56230c661dd1cb9~mv2.png
+https://i.pinimg.com/564x/ea/96/9d/ea969d940b6e20b2b3f4fd2806a9540c.jpg
+https://i.pinimg.com/564x/12/a3/8a/12a38abc3ba0ef45c9e62032663fe01b.jpg
+https://i.pinimg.com/564x/78/17/f7/7817f7233fbd8a7188bd01d6444b5c77.jpg
+https://i.pinimg.com/564x/cc/a0/5e/cca05eebf3eea77c9eb9987732719341.jpg
+https://www.redbubble.com/shop/ap/151083308?asc=u
+https://i.pinimg.com/564x/33/6b/b5/336bb5becfb2709d333c26785afa39c7.jpg
+https://i.pinimg.com/564x/52/ea/d2/52ead27ee96b3d5a7e73ebb88fcf6ec4.jpg
+https://i.pinimg.com/564x/71/60/1c/71601cce5360229014c7509c80058f5b.jpg
+https://i.pinimg.com/564x/c6/e7/61/c6e76153060ce65f12c685e9da64cbd8.jpg
+https://i.pinimg.com/564x/86/d4/b4/86d4b43c8851896ec6063cb84dcb404d.jpg
 
 Vistor icon:https://static.thenounproject.com/png/19725-200.png
 Employee icon:https://cdn-icons-png.flaticon.com/512/2666/2666479.png
 gif:https://i.pinimg.com/originals/91/1e/b1/911eb1f2cff48f9a4179835007eb7fbd.gif
 website:https://png.pngtree.com/png-vector/20220226/ourmid/pngtree-pictures-in-construction-png-image_4398265.png
-大腳怪
-https://www.redbubble.com/shop/ap/151083308?asc=u
+
 
 Sticker:
 https://www.ilikesticker.com/LineStickerAnimation/W3941144-Kawaii-Dinosaur-Animation-Sticker/en
